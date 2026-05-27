@@ -19,8 +19,8 @@ def fix_arabic_text(text):
     if not text or not contains_arabic(text):
         return text
     
-    # تقسيم النص بناءً على الروابط والوسوم البرمجية لتجنب تخريبها
-    parts = re.split(r'(<[^>]+>|\{[0-9]+\})', text)
+    # تقسيم النص بناءً على الروابط والوسوم البرمجية لتجنب تخريبها (يدعم جميع الأقواس المعقوفة مثل {Hotkey} و {0})
+    parts = re.split(r'(<[^>]+>|\{[^}]+\})', text)
     fixed_parts = []
     for part in parts:
         if (part.startswith('<') and part.endswith('>')) or (part.startswith('{') and part.endswith('}')):

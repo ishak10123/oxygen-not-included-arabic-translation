@@ -30,7 +30,8 @@ def restore_string(text):
     
     # إذا كانت النصوص تحتوي على الحروف المتصلة (Presentation Forms) فهذا يعني أنها كانت مقلوبة ويجب عكسها لتصحيح الترتيب
     if contains_presentation_forms(text):
-        parts = re.split(r'(<[^>]+>|\{[0-9]+\})', text)
+        # يدعم جميع الأقواس المعقوفة مثل {Hotkey} و {0}
+        parts = re.split(r'(<[^>]+>|\{[^}]+\})', text)
         fixed_parts = []
         for part in parts:
             if (part.startswith('<') and part.endswith('>')) or (part.startswith('{') and part.endswith('}')):
