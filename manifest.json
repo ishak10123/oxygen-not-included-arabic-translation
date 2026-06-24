@@ -1,0 +1,20 @@
+{
+  "id": "oxygen-not-included-ar",
+  "gameTitle": "Oxygen Not Included",
+  "alternateTitles": [
+    "أكسجين نوت إنكلوديد",
+    "ONI",
+    "OxygenNotIncluded"
+  ],
+  "translationVersion": "1.0.0",
+  "gameVersion": "unknown",
+  "summary": "تعريب كامل للعبة Oxygen Not Included يشمل الواجهات، الأدوات، الأوصاف والمخططات.",
+  "description": "تعريب كامل ومتكامل للعبة Oxygen Not Included بنسبة 100% وبطريقة آمنة ومتوافقة مع التحديثات. يشمل تعريب الواجهات، الأدوات، الأوصاف، المخططات، والتقارير.",
+  "requiresAdmin": false,
+  "archiveType": "zip",
+  "installerKind": "bat",
+  "entryFile": "scripts/install.bat",
+  "restoreEntryFile": "scripts/restore.bat",
+  "launchMode": "extract_then_run",
+  "status": "draft"
+}
